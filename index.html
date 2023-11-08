@@ -7,7 +7,6 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%;
             font: 100% Georgia, sans-serif;
             line-height: 1.8em;
             color: #555753;
@@ -27,30 +26,41 @@
         .navbar a:hover {
             background-color: #555;
         }
+        .container {
+            padding: 20px;
+        }
+        .plot-section {
+            margin-top: 40px;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="navbar">
         <a href="#donut-section">Proportions of Indigenous Populations</a>
         <a href="#map-section">Geographical Distribution</a>
-        <a href="#scatter-section">Relationship Between Mental Health and Food Insecurity</a>
+        <a href="#scatter-section">Mental Health & Food Insecurity</a>
     </div>
 
-    <div id="donut-section">
-        <h2>Proportions of Indigenous Populations in Canada - 2021 Census</h2>
-        <iframe src="donut.html" title="Donut Chart" width="80%" height="80%" frameborder="0"></iframe>
-    </div>
+    <div class="container">
+        <div class="plot-section" id="donut-section">
+            <h2>Proportions of Indigenous Populations in Canada - 2021 Census</h2>
+            <iframe src="donut.html" title="Donut Chart" width="80%" height="80%" frameborder="0"></iframe>
+        </div>
 
-    <div id="map-section">
-        <h2>Geographical Distribution of Indigenous Populations Across Canadian Provinces and Territories - 2021 Census</h2>
-        <iframe src="map.html" title="Map" width="80%" height="80%" frameborder="0"></iframe>
-    </div>
+        <div class="plot-section" id="map-section">
+            <h2>Geographical Distribution of Indigenous Populations Across Canadian Provinces and Territories</h2>
+            <iframe src="map.html" title="Map" width="80%" height="80%" frameborder="0"></iframe>
+        </div>
 
-    <div id="scatter-section">
-        <h2>Relationship Between Mental Health and Food Insecurity</h2>
-        <iframe src="scatter.html" title="Scatter Plot" width="80%" height="80%" frameborder="0"></iframe>
+        <div class="plot-section" id="scatter-section">
+            <h2>Relationship Between Poor Mental Health and Food Insecurity</h2>
+            <iframe src="scatter.html" title="Scatter Plot" width="80%" height="80%" frameborder="0"></iframe>
+        </div>
     </div>
 
 </body>
 </html>
+
+
