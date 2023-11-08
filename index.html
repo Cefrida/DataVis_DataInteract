@@ -1,32 +1,56 @@
-# data_interact
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test page</title>
-        <style>
-        	html {
-				margin: 0;
-				padding: 0;
-				height: 100%;
-			}
-			body { 
-				font: 100% georgia, sans-serif;
-				line-height: 1.8em;
-				color: #555753; 
-				height:100%
-			}
-		</style>
-    </head>
+<head>
+    <title>Interacting With Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font: 100% Georgia, sans-serif;
+            line-height: 1.8em;
+            color: #555753;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
 
-    <body>
-    	<h2> Let's put it in an iframe!</h2>
-    	<iframe src="donut.html" title="Bubble plot" width = "80%" height = "80%" 
-    	frameBorder="0"></iframe> 
-      <h2> Let's put it in an iframe!</h2>
-    	<iframe src="map.html" title="Bubble plot" width = "80%" height = "80%" 
-    	frameBorder="0"></iframe> 
-      <h2> Let's put it in an iframe!</h2>
-    	<iframe src="scatter.html" title="Bubble plot" width = "80%" height = "80%" 
-    	frameBorder="0"></iframe> 
-    </body>
+    <div class="navbar">
+        <a href="#donut-section">Proportions of Indigenous Populations</a>
+        <a href="#map-section">Geographical Distribution</a>
+        <a href="#scatter-section">Relationship Between Mental Health and Food Insecurity</a>
+    </div>
+
+    <div id="donut-section">
+        <h2>Proportions of Indigenous Populations in Canada - 2021 Census</h2>
+        <iframe src="donut.html" title="Donut Chart" width="80%" height="80%" frameborder="0"></iframe>
+    </div>
+
+    <div id="map-section">
+        <h2>Geographical Distribution of Indigenous Populations Across Canadian Provinces and Territories - 2021 Census</h2>
+        <iframe src="map.html" title="Map" width="80%" height="80%" frameborder="0"></iframe>
+    </div>
+
+    <div id="scatter-section">
+        <h2>Relationship Between Mental Health and Food Insecurity</h2>
+        <iframe src="scatter.html" title="Scatter Plot" width="80%" height="80%" frameborder="0"></iframe>
+    </div>
+
+</body>
 </html>
