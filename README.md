@@ -1,4 +1,4 @@
-#DATA 201 Interacting with Data Webpage
+***DATA 201 Interacting with Data Webpage***
 
 This project was made in my Data Visualization class (Data 201) during my Junior year (Fall 2023). 
 
